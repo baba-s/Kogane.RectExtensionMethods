@@ -39,6 +39,14 @@ namespace Kogane
         /// <summary>
         /// 指定されたサイズで Rect を縮小します
         /// </summary>
+        public static Rect Shrink( this Rect self, float size )
+        {
+            return self.Shrink( new Vector2( size, size ) );
+        }
+
+        /// <summary>
+        /// 指定されたサイズで Rect を縮小します
+        /// </summary>
         public static Rect Shrink( this Rect self, in Vector2 size )
         {
             self.position += size * 0.5f;
