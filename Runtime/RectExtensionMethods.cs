@@ -15,7 +15,7 @@ namespace Kogane
         /// </summary>
         public static Rect ToCenterRect( this Rect self )
         {
-            return new Rect
+            return new
             (
                 x: self.xMin - self.size.x * 0.5f,
                 y: self.yMin - self.size.y * 0.5f,
