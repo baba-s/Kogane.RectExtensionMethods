@@ -54,5 +54,23 @@ namespace Kogane
 
             return self;
         }
+
+        /// <summary>
+        /// 指定されたサイズで Rect を拡大します
+        /// </summary>
+        public static Rect Expand( this Rect self, float size )
+        {
+            self.size += Vector2.one * size;
+            return self;
+        }
+
+        /// <summary>
+        /// 指定されたサイズで Rect を拡大します
+        /// </summary>
+        public static Rect Expand( this Rect self, in Vector2 size )
+        {
+            self.size += size;
+            return self;
+        }
     }
 }
